@@ -81,22 +81,21 @@ stop_list = getrouteinfo(LAT,LONG,"R4")
             bus_list = getBusInfo(String(nearest_stop_numbers[elem]))
             .then(newdata => bus_info_list.push(newdata))
         }
-        return bus_info_list
 
         print(bus_info_list)  
         closest_index = -1 
         print(bus_info_list.length)
-        print(bus_info_list)
-        for (item in bus_info_list){
-            print(bus_info_list[i][0].Direction)
-            if (bus_info_list[item][0].Direction == "WEST"){
+        // print(bus_info_list)
+        // for (item in bus_info_list){
+        //     print(bus_info_list[i][0].Direction)
+        //     if (bus_info_list[item][0].Direction == "WEST"){
              
-                print(bus_info_list[i][0]);
-                closest_index = elem;
-                break;
-            }
-        }
-        print(closest_index)
+        //         print(bus_info_list[i][0]);
+        //         closest_index = elem;
+        //         break;
+        //     }
+        // }
+        // print(closest_index)
         // if (closest_index != -1){
         //     intersection = bus_info_list[closest_index]OnStreet"] + " and " + stops[closest_index]["AtStreet"]
         //     estimates = [x["ExpectedCountdown"] for x in stopInfos[closest_index][0]["Schedules"] if x["ExpectedCountdown"] >= 0]
