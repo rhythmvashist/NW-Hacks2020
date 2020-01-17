@@ -30,14 +30,9 @@ async function getBusInfo(busSpot){
     return data;
 }
 
-
 getrouteinfo(LAT,LONG,ROUTE)
     .then(data =>{
-
         nearest_stop_numbers=data
-        // for (elem in data){
-        //     nearest_stop_numbers.push(data[elem].StopNo)
-        // }   
         bus_info_list=[]
         closest_index = -1
         for (elem in nearest_stop_numbers){
