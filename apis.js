@@ -39,6 +39,7 @@ getrouteinfo(LAT,LONG,ROUTE)
             bus_list = getBusInfo(String(nearest_stop_numbers[elem].StopNo))
             .then(newdata => {
                 bus_info_list.push(newdata)
+                
                 if(bus_info_list.length>=nearest_stop_numbers.length){
                     for (item in bus_info_list){
                         if (bus_info_list[item][0].Direction == "WEST"){
@@ -48,6 +49,7 @@ getrouteinfo(LAT,LONG,ROUTE)
                             break;
                         }
                     }
+
                     estimates =[]
                     if (closest_index != -1){
                         intersection = nearest_stop_numbers[closest_index].OnStreet + " and " + nearest_stop_numbers[closest_index].AtStreet 
