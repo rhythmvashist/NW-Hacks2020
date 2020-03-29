@@ -49,7 +49,6 @@ getrouteinfo(LAT,LONG,ROUTE)
                             break;
                         }
                     }
-
                     estimates =[]
                     if (closest_index != -1){
                         intersection = nearest_stop_numbers[closest_index].OnStreet + " and " + nearest_stop_numbers[closest_index].AtStreet 
